@@ -1,5 +1,5 @@
 context:
-  version: "0.1.0"
+  version: "0.1.1"
 
 package:
   name: phonors
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/phonors/phonors-${{ version }}.tar.gz
-  sha256: 79635ca7b226790b81767f516cf53047a49c24bd187cedb23d88774e462cdf47
+  sha256: 0bb2116fa8c791c37ea9bc234290e91855f756f87d63b020417f2feef5655ae1
 
 build:
-  number: 2
+  number: 0
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - python -m pip install . -vv --no-deps --no-build-isolation
