@@ -10,7 +10,9 @@ source:
   sha256: 75023abb30e0d874a7af24d732e8839cc07091389de34644d3853489a4d42a50
 
 build:
-  number: 0
+  number: 1
+  skip:
+    - target_platform in ["linux-aarch64", "linux-ppc64le"] and "cp314t" in python
   script:
     - cargo-bundle-licenses --format yaml --output THIRDPARTY.yml
     - python -m pip install . -vv --no-deps --no-build-isolation
