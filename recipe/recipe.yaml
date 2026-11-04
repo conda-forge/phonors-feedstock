@@ -1,5 +1,5 @@
 context:
-  version: "0.7.0"
+  version: "0.8.0"
 
 package:
   name: phonors
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/phonors/phonors-${{ version }}.tar.gz
-  sha256: 2ea6e5d07ec35954d9cc69661b3f80c358f810fbba9bbff9d6b0dbe20ead53cc
+  sha256: 79f292283d9018cc2be88bd8988c7fb6c6e10176480df874096f9ef5ad54ff3f
 
 build:
   number: 0
