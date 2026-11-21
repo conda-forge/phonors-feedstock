@@ -1,5 +1,5 @@
 context:
-  version: "0.8.0"
+  version: "0.9.0"
 
 package:
   name: phonors
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/phonors/phonors-${{ version }}.tar.gz
-  sha256: 79f292283d9018cc2be88bd8988c7fb6c6e10176480df874096f9ef5ad54ff3f
+  sha256: 018d6c856826700effb80b6cce371a7689667273ea853efeac8647525c06cb14
 
 build:
-  number: 1
+  number: 0
   skip:
     - target_platform in ["linux-aarch64", "linux-ppc64le"] and "cp314t" in python
   script:
